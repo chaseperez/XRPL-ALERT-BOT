@@ -1,24 +1,29 @@
 # 🚀 XRPL Token Alert Bot
 
-A Telegram bot that tracks **newly launched tokens on the XRPL** and sends alerts to your Telegram.  
-The bot monitors:
+A lightweight async Telegram bot that **tracks new token listings across multiple XRPL explorers** and sends instant alerts to Telegram.  
 
-- [FirstLedger](https://firstledger.net)
-- [XPMarket](https://xpmarket.com)
-- [HorizonXRPL](https://horizonxrpl.com)
-
-Whenever a new token is detected, you’ll get a message in Telegram like:
-
+✅ Runs 24/7 on **Render free tier** with **no external uptime monitor needed** (built-in self-ping).  
+✅ Sends **startup message** when deployed successfully.  
+✅ Includes **health check endpoint** (`/`) for Render.  
 
 ---
 
+
+
+
 ## 🔧 Features
+- Tracks tokens from:
+  - FirstLedger
+  - XPMarket
+  - HorizonXRPL
 - Tracks tokens across **multiple XRPL explorers**
 - Sends alerts directly to **Telegram**
 - Runs 24/7 on **Render free tier**
-- Lightweight and async (Flask + APScheduler + python-telegram-bot)
+- Built-in **self-ping task** (no UptimeRobot required)
+- Async + lightweight (Flask + APScheduler + python-telegram-bot)
 - Sends **startup message** to Telegram on deploy
 - Provides a **health check endpoint** (`/`) for Render
+- Deploy-ready on **Render**
 - Gunicorn-ready for production deployment
 
 ---
@@ -28,4 +33,4 @@ Whenever a new token is detected, you’ll get a message in Telegram like:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/chaseperez/xrpl-alert-bot.git
-cd xrpl-token-alert-bot/backend
+cd xrpl-alert-bot/backend
